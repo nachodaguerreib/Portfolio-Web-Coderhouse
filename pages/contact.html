@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Ignacio Daguerre - Front-End Developer and Computer Technician from Montevideo, Uruguay."
+    />
+    <meta name="author" content="Ignacio Daguerre Ibarra" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>Contact - Ignacio Daguerre Portfolio</title>
+  </head>
+  <body class="body">
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./skills.html">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- contact section -->
+      <section class="contact" id="contact">
+        <!-- contact container-->
+        <div class="contact__container">
+          <!-- contact card -->
+          <div class="contact__card">
+            <!-- card title -->
+            <h2>Let's Connect</h2>
+            <!-- Card description -->
+            <p>
+              I'm open to freelance opportunities, collaborations, or simply
+              connecting!
+            </p>
+            <!-- contact social links -->
+            <ul class="contact__socials">
+              <li>
+                <a
+                  href="https://github.com/nachodaguerre"
+                  class="contact__social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="visita mi perfil de github"
+                >
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/ignacio-daguerre-ibarra-9a0628376/"
+                  class="contact__social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="visita mi perfil de linkedin"
+                >
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/nachodaguerre/"
+                  class="contact__social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="visita mi perfil de instagram"
+                >
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- contact info -->
+            <p>
+              Email:<a href="mailto:nachodaguerre672@gmail.com"
+                >nachodaguerre672@gmail.com</a
+              >
+            </p>
+            <!-- download cv -->
+            <a
+              href="/path-to-cv.pdf"
+              download
+              class="contact__cv-btn btn--secondary"
+              >Download CV</a
+            >
+          </div>
+          <!-- contact form -->
+          <form class="contact__form" action="/submit" method="post">
+            <div class="contact__name-group">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" required />
+
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" required />
+            </div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send message" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__container">
+        <p class="footer__text">
+          &copy; 2025 Jaime Ignacio Daguerre. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
