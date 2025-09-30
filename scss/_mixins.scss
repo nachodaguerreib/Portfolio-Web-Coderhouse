@@ -1,0 +1,47 @@
+// ==========================
+// MIXINS
+// ==========================
+
+@mixin button-style($bg-color: $accent-primary, $text-color: white) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $accent-hover;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px $shadow-hover;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@mixin card-style($bg-color: $bg-light) {
+  background: $bg-color;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid $border-color;
+  box-shadow: 0 4px 15px $shadow-color;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(124, 58, 237, 0.2);
+    border-color: $border-light;
+  }
+}
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
