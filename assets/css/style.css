@@ -466,7 +466,7 @@ img {
 }
 .projects__card-image img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0.75rem;
   transition: transform 0.3s ease;
 }
@@ -659,8 +659,8 @@ img {
   display: block;
   color: #eee;
 }
-.contact__form input[type=text],
-.contact__form input[type=email],
+.contact__form input[type="text"],
+.contact__form input[type="email"],
 .contact__form textarea {
   width: 100%;
   padding: 0.75rem 1rem;
@@ -672,23 +672,25 @@ img {
   color: #eee;
   transition: all 0.3s ease;
 }
-.contact__form input[type=text]:focus,
-.contact__form input[type=email]:focus,
+.contact__form input[type="text"]:focus,
+.contact__form input[type="email"]:focus,
 .contact__form textarea:focus {
   border-color: #7c3aed;
   box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
   outline: none;
   background-color: #1a1a2e;
 }
-.contact__form input[type=text]::-moz-placeholder, .contact__form input[type=email]::-moz-placeholder, .contact__form textarea::-moz-placeholder {
+.contact__form input[type="text"]::-moz-placeholder,
+.contact__form input[type="email"]::-moz-placeholder,
+.contact__form textarea::-moz-placeholder {
   color: #6c7293;
 }
-.contact__form input[type=text]::placeholder,
-.contact__form input[type=email]::placeholder,
+.contact__form input[type="text"]::placeholder,
+.contact__form input[type="email"]::placeholder,
 .contact__form textarea::placeholder {
   color: #6c7293;
 }
-.contact__form input[type=submit] {
+.contact__form input[type="submit"] {
   background-color: #7c3aed;
   color: white;
   padding: 0.75rem 1.5rem;
@@ -703,7 +705,7 @@ img {
   cursor: pointer;
   border: none;
 }
-.contact__form input[type=submit]:hover {
+.contact__form input[type="submit"]:hover {
   background-color: #8b5cf6;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
@@ -763,20 +765,23 @@ img {
   .skills__soft-items {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
-  .skills__technical-content, .skills__soft-content {
+  .skills__technical-content,
+  .skills__soft-content {
     flex-direction: row;
     align-items: flex-start;
     gap: 4rem;
   }
-  .skills__technical-description, .skills__soft-description {
+  .skills__technical-description,
+  .skills__soft-description {
     flex: 0 0 300px;
     text-align: left;
   }
-  .skills__technical-grid, .skills__soft-grid {
+  .skills__technical-grid,
+  .skills__soft-grid {
     flex: 1;
   }
   .projects__cards {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 2.5rem;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
